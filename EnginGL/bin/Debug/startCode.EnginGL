@@ -1,0 +1,15 @@
+#include<GL/glut.h>
+
+void myInit(void)
+{
+	glClearColor(0, 0, 0, 0);
+	glMatrixMode(GL_PROJECTION);
+	glLineWidth(2);
+	glPointSize(10);
+	glLoadIdentity();
+	gluOrtho2D(0, 640, 0, 480);
+}
+
+void myDisplay(void)
+{
+	glClear(GL_COLOR_BUFFER_BIT);
